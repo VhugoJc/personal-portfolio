@@ -1,0 +1,27 @@
+@import "./variables";
+@import "./portfolio/scrollbar";
+@import "./portfolio/menu";
+
+@import "./portfolio/cards";
+
+@import "./portfolio/banner";
+@import "./portfolio/aboutme";
+@import "./portfolio/music";
+@import "./portfolio/mywork";
+
+@import "./portfolio/modal";
+@import "./portfolio/footer";
+
+body {
+    width: 100vw;
+    height: 120vh;
+    background: $background-black;
+    margin: 0;
+    overflow-x: hidden; /* Hide vertical scrollbar */
+    color: $primary-font;
+    font-family: 'Roboto';
+  }
+
+  #menuicon {
+    stroke: $primary-font;
+  }

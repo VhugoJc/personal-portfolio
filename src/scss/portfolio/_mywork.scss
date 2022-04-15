@@ -1,0 +1,51 @@
+.my-work{
+    min-height: 500px;
+    height: 100%;
+    &-grid{
+        background: linear-gradient(270deg, $primary-red 0%, $primary-yellow 44%);
+        padding: 30px 50px 50px 50px;
+        margin-bottom: 50px;
+        border-radius: 15px;
+    }
+    &-card{
+        cursor: pointer;
+        margin-top: 20px;
+        border-radius: 15px;
+        height: 200px;
+        &-img{
+            padding-top: 10%;
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+        }
+    &-style{
+            background-size: cover;
+            position: relative;
+            &:hover::before{
+                border-radius: 15px;
+                content: '';
+                display: block;
+                position: absolute;
+                height: 100.9%;
+                width: 100.5%;
+                margin-top: -1px;
+                margin-left: -1px;
+                background: rgba($color: #000000, $alpha: 0.70) ;
+            }
+            &-title{
+                font-size: 20px;
+                font-weight: bold;
+                top: 0px;
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    
+    .my-work-card-style:hover + .my-work-card-style-title{
+        display: block;
+    }
+}
